@@ -1,16 +1,14 @@
 # Pixel Art Maker Project
+  This application let you draw a pixel image.
+  
+## How to start?
+Open the following url: 
+https://t-lab05.github.io/Pixel-Art-Maker/
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## How to use?
+1. Choose the grid size and you will see pixels.
+2. Select a color.
+3. Click a pixel and color it.
 
 ## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Original code was provided by Udacity.
