@@ -5,7 +5,7 @@ $('#pixel_canvas').on('click','td',function(event){
     var currentColor = document.getElementById('colorPicker').value;
     // Make the event target the color
     event.target.style.backgroundColor = currentColor;
-})
+});
 
 function makeGrid() {
     // Remove all <tr> elements which has been existed.
@@ -38,6 +38,6 @@ function makeGrid() {
             targetRow.append(td);
             // Add id name with the value of j
             td.id = "column-" + j;
-        };
-    };
+        }
+    }
 }
