@@ -1,4 +1,3 @@
-
 // When size is submitted by the user, call makeGrid()
 var sizePicker = document.getElementById('sizePicker');
 sizePicker.addEventListener('submit',function(){
@@ -39,13 +38,12 @@ function makeGrid() {
             // Grab the <td> on DOM
             var td =  document.getElementById(td.id);
             td.addEventListener('click',function(){
-                console.log(event.target)
+                console.log(event.target);
                 // Grab current color value
                 var currentColor = document.getElementById('colorPicker').value;
                 // Chage the color of the clicked element
-                event.target.style.backgroundColor = currentColor
-            })
+                event.target.style.backgroundColor = currentColor;
+            });
         }
     }
 }
-
