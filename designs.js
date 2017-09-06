@@ -1,24 +1,22 @@
-// Select color input
 
-$('#pixel_canvas').on('click','td',function(event){
-    // Get the value of colorPicker
-    var currentColor = document.getElementById('colorPicker').value;
-    // Make the event target the color
-    event.target.style.backgroundColor = currentColor;
+// When size is submitted by the user, call makeGrid()
+var sizePicker = document.getElementById('sizePicker');
+sizePicker.addEventListener('submit',function(){
+    event.preventDefault();
+    makeGrid();
 });
 
 function makeGrid() {
-    // Remove all <tr> elements which has been existed.
-    $('tr').remove();
-
-    // Grab height and width of grid
-    var gridHeight = document.getElementById('input_height').value;
-    var gridWidth = document.getElementById('input_width').value;
-    console.log("Row  : " + gridHeight);
-    console.log("column : " + gridWidth);
-
     // Grab canvas
     var pixelCanvas = document.getElementById('pixel_canvas');
+
+    // Remove existing pixels
+    pixelCanvas.innerHTML = '';
+
+    // Grab values of grid height and width
+    var gridHeight = document.getElementById('input_height').value;
+    var gridWidth = document.getElementById('input_width').value;
+
     // Make <tr> as much as gridWidth
     for(var i = 1; i <= gridWidth; i++){
         // Create <tr> element
@@ -37,7 +35,17 @@ function makeGrid() {
             // Add the element to DOM
             targetRow.append(td);
             // Add id name with the value of j
-            td.id = "column-" + j;
+            td.id = 'pixel-' + i + '-' + j;
+            // Grab the <td> on DOM
+            var td =  document.getElementById(td.id);
+            td.addEventListener('click',function(){
+                console.log(event.target)
+                // Grab current color value
+                var currentColor = document.getElementById('colorPicker').value;
+                // Chage the color of the clicked element
+                event.target.style.backgroundColor = currentColor
+            })
         }
     }
 }
+
