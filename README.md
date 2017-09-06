@@ -1,16 +1,13 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## How to start?
+Click the following link:  
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## How to use?
+1. Set the width and height of pixel and push submit button.
+2. Set the color.
+3. Click pixels and draw as you like!
 
 ## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+The starter code was provided by Udacity.
