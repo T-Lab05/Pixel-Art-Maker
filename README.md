@@ -1,7 +1,7 @@
 # Pixel Art Maker Project
 
 ## How to start?
-Click the following link:  
+Click the following link:  https://t-lab05.github.io/Pixel-Art-Maker/
 
 
 ## How to use?
